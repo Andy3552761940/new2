@@ -1,0 +1,15 @@
+[package]
+name = "tinyos-rv64"
+version = "0.3.0"
+edition = "2021"
+license = "MIT"
+
+# Bare-metal kernel: no std, custom entry, panic abort.
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
